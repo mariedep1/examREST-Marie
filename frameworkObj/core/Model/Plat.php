@@ -62,5 +62,21 @@ class Plat extends Model
 
 
 
+    
+    /**
+     * 
+     * retourne le nombre de likes d'un plat
+     * @return int
+     * 
+     */
+
+    public function getLikes(){
+        $modelLike = new \Model\Like();
+        $nbrLike = $modelLike->findAllByPlat($this->id);
+        return $nbrLike;
+    }
+
+
+
 
 }

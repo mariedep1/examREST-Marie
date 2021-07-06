@@ -158,6 +158,7 @@ function faireRestaurantEtSesPlats(restaurant, plats){
         <h3>${plat.name}</h3>
         <h4>${plat.price}euros</h4>
         <p>${plat.description}</p>
+        
         <button class="deletePlat btn btn-danger" value="${plat.id}">Supprimer</button>
                         
         <hr>
